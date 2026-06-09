@@ -91,7 +91,7 @@
 
         /* Content Sections */
         .content-section {
-            padding-top: 60px; /* Offset for anchor links if you add a sticky header later */
+            padding-top: 60px;
             margin-bottom: 4rem;
             border-bottom: 1px solid #eee;
             padding-bottom: 2rem;
@@ -102,6 +102,36 @@
             border-left: 4px solid var(--accent-color);
             padding-left: 10px;
             margin-top: 0;
+        }
+
+        /* Image and Figure Styling */
+        figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        figcaption {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .notice-box {
@@ -135,7 +165,6 @@
             margin-top: 2rem;
         }
 
-        /* Smooth Scrolling */
         html {
             scroll-behavior: smooth;
         }
@@ -172,11 +201,11 @@
             <p>Om dingen te laten zien in de VR omgeving, doorloop je drie stappen: het verkrijgen van 3D modellen (en eventueel animaties), het maken van interacties via de Connec2 Blender plug-in, en het inladen van de projecten op de VR brillen.</p>
             
             <div class="notice-box">
-                <strong>💡 Startpunt:</strong> Hier kan een Miro bord worden gevonden waar de basis van Blender en een korte uitleg over Connec2 worden uitgelegd.
+                <strong>💡 Startpunt:</strong> <a href="#" target="_blank">Hier kan je een Miro bord vinden</a> waar de basis van Blender wordt uitgelegd samen met een korte uitleg over Connec2.
             </div>
 
             <h3>VR Brillen Management</h3>
-            <p>De laatste stap van het proces is alles inladen op de VR brillen. Projecten worden ingeladen via de VR client app van Connec2. Alle uitleg over deze app en het inladen van projecten is via hun platform beschikbaar.</p>
+            <p>De laatste stap van het proces is alles inladen op de VR brillen. Connec2 heeft een VR client waarmee je de projecten inlaadt. Alle uitleg over deze app en het inladen van je projecten <a href="#" target="_blank">kan je hier vinden</a>.</p>
 
             <div class="todo-box">
                 <strong>⚠️ TO DO:</strong> Wat moeten mensen weten over het instellen van de VR brillen? (Denk aan specifieke Wifi configuraties).
@@ -185,42 +214,52 @@
 
         <div id="blender-connec2" class="content-section">
             <h2>Blender & Connec2 Workflow</h2>
-            <p>Blender kan op het eerste oog een intimiderend programma lijken vanwege de vele knoppen en tools. Gelukkig kun je met slechts een paar van deze tools al heel veel maken.</p>
+            <p>Blender lijkt op het eerste oog best een intimiderend programma, het heeft veel knoppen en tools. Het goede nieuws is dat je met maar een paar van die tools al heel veel kan maken.</p>
             
             <ul>
-                <li><strong>Basis leren:</strong> Bekijk de aanbevolen video's om de basis, handige trucjes, beginselen van animeren (waarbij in de eerste instantie alleen keyframes nodig zijn), en texture-basis te leren.</li>
-                <li><strong>Eerste stappen:</strong> Na het bekijken en uitproberen van de video's en het volgen van het Miro bord, zou je in staat moeten zijn je eerste 3D modellen te maken.</li>
-                <li><strong>Tijdbesparing:</strong> Het maken van 3D modellen kost veel tijd; zoek daarom eerst via Google naar gratis beschikbare modellen voordat je zelf aan de slag gaat.</li>
-                <li><strong>Animaties:</strong> Gratis animaties voor menselijke figuren zijn te vinden op Mixamo.</li>
-                <li><strong>Troubleshooting:</strong> Youtube en Google zijn je beste vriend; er is erg veel documentatie te vinden over Blender.</li>
+                <li><strong>Basis leren:</strong> Met <a href="#" target="_blank">deze video's</a> leer je al snel de basis van blender, wat handige trucjes, de beginselen van animeren (alleen keyframes zijn in de eerste instantie nodig), en de basis van textures.</li>
+                <li><strong>Eerste stappen:</strong> Als je deze video's hebt gekeken (en hebt uitgeprobeerd) en je hebt het Miro bord gevolgd, zou je al je eerste 3D modellen kunnen maken.</li>
+                <li><strong>Tijdbesparing:</strong> Het maken van 3D modellen kost wel veel tijd. Gelukkig zijn er online erg veel gratis 3D modellen te vinden door te Googlen. Om tijd te besparen is het dus handig om eerst online te kijken wat er al is, voordat je zelf aan de slag gaat.</li>
+                <li><strong>Animaties:</strong> Je kan ook animaties gratis online vinden. Animaties voor menselijke figuren kan je vinden op <a href="#" target="_blank">Mixamo</a>.</li>
+                <li><strong>Troubleshooting:</strong> Youtube en Google zijn je beste vriend. Er is erg veel documentatie te vinden over Blender, dus mocht je er ooit niet uitkomen zijn de antwoorden vaak online te vinden.</li>
             </ul>
 
             <h3>Connec2 Integratie</h3>
-            <p>Connec2 heeft een plug-in voor Blender ontwikkeld waarmee eenvoudig interacties voor de VR omgeving gemaakt kunnen worden. Instructies voor het downloaden van Connec2 en de bijbehorende documentatie zijn via hun platform te vinden.</p>
+            <p>Connec2 heeft een plug-in ontwikkeld voor Blender waarmee je eenvoudig interacties kan maken voor de VR omgeving. Om Connec2 te downloaden, <a href="#" target="_blank">kan je deze instructies volgen</a>. De documentatie hiervoor <a href="#" target="_blank">kan je hier vinden</a>.</p>
         </div>
 
         <div id="dreamoc-display" class="content-section">
             <h2>Dreamoc Holographic Display</h2>
-            <p>De Dreamoc creëert een 3D, zwevend effect door video's te projecteren op een reflecterend glas.</p>
+            <p>De Dreamoc projecteert video's met een reflecterend glas waardoor het een 3D effect krijgt. Hierdoor lijkt het alsof video's en animaties zweven.</p>
 
             <h3>Content Creatie</h3>
-            <p>Het maken van video's voor de Dreamoc is simpel, maar er zijn een aantal dingen om rekening mee te houden:</p>
+            <p>Video's maken voor de Dreamoc is simpel, maar er zijn een aantal dingen om rekening mee te houden:</p>
             <ul>
-                <li>Video's hoeven geen 3D renders te zijn; 2D beeldmateriaal werkt ook prima.</li>
+                <li>Video's hoeven geen 3D renders te zijn, 2D beeldmateriaal werkt ook prima.</li>
                 <li>De content van de video mag de randen van het beeld niet raken, hierdoor verlies je het zwevende effect.</li>
                 <li>De achtergrond van je video moet zwart zijn.</li>
-                <li>De content moet worden verdeeld over 3 videobeelden zodat het hologram vanuit meerdere kanten zichtbaar is. Dit betekent niet dat je een vooraanzicht en zijaanzichten hebt. Je gebruikt dezelfde video die gedupliceerd is over 3 verschillende views.</li>
+                <li>De content moet worden verdeeld over 3 videobeelden, zodat het hologram vanuit meerdere kanten zichtbaar is. Dit betekent niet dat je een vooraanzicht en zijaanzichten hebt. Je gebruikt dezelfde video die gedupliceerd is over 3 verschillende views.</li>
             </ul>
 
-            <p><strong>Templates:</strong> Bezoek de download pagina van de Dreamoc voor de user manual, content manual en templates. Dreamoc biedt een Adobe After Effects template aan om je video om te zetten zodat hij de drie verschillende views op de correcte plek heeft voor het uiteindelijke effect.</p>
+            <figure>
+                <img src="vul-hier-je-afbeelding-link-in.png" alt="Figuur 1: De lay-out van video's voor de Dreamoc">
+                <figcaption>Figuur 1: De lay-out van video's voor de Dreamoc</figcaption>
+            </figure>
 
-            <h3>Hardware & SD-Kaart</h3>
-            <p>De Dreamoc heeft aan de achterkant een klep die geopend kan worden met een sleutel. Achter de klep vind je de SD-kaart. Om video's af te spelen op de Dreamoc, hoef je alleen je video op de SD-kaart te zetten, en deze terug te stoppen.</p>
+            <p><strong>Templates:</strong> <a href="#" target="_blank">Hier kan je de download pagina vinden</a> van de Dreamoc. Op deze pagina kan je de user manual vinden, maar ook een content manual en template. Dreamoc heeft een template gemaakt voor Adobe After Effects. Deze kan je gebruiken om je video om te zetten zodat hij de drie verschillende views op de correcte plek heeft voor het uiteindelijke, gewenste effect.</p>
+
+            <h3>Hardware & SD-Kaart Uploads</h3>
+            <p>De Dreamoc heeft aan de achterkant een klep die geopend kan worden met een sleutel. Achter de klep kan je een SD-kaart vinden. Om video's af te spelen op de Dreamoc, hoef je alleen je video op de SD-kaart te zetten, en deze terug te stoppen in de Dreamoc.</p>
             
+            <figure>
+                <img src="vul-hier-je-afbeelding-link-in.png" alt="Figuur 2: Achterkant van de Dreamoc.">
+                <figcaption>Figuur 2: Achterkant van de Dreamoc. De rode cirkel laat zien waar je de SD-kaart kan vinden.</figcaption>
+            </figure>
+
             <p>De Dreamoc laat video's zien in de volgorde waarop ze op de SD-kaart geüpload staan. De volgorde kan je aanpassen door de bestandsnamen aan te passen:</p>
             <ul>
-                <li><code>00 – MST Logo</code></li>
-                <li><code>01 – 3D lab</code></li>
+                <li>Zo kan je bijvoorbeeld de eerste video <code>00 – MST Logo</code> noemen.</li>
+                <li>En de tweede <code>01 – 3D lab</code>.</li>
             </ul>
         </div>
     </div>
