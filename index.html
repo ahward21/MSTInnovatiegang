@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatiegang | Overdrachtsdocument</title>
+    <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f4f4f9;
+            --accent-color: #0066cc;
+            --text-color: #333333;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 10%;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Tile System / Grid */
+        .tile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tile {
+            background-color: var(--secondary-color);
+            border: 1px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        .tile-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tile h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .tile p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding-top: 60px; /* Offset for anchor links if you add a sticky header later */
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        .notice-box {
+            background-color: #fff9e6;
+            border-left: 4px solid #ffcc00;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .todo-box {
+            background-color: #ffe6e6;
+            border-left: 4px solid #ff4d4d;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            color: #666;
+            margin-top: 2rem;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Overdrachtsdocument Innovatiegang</h1>
+        <p>Mei 2026</p>
+    </header>
+
+    <div class="container">
+        <div class="tile-grid">
+            <a href="#vr-brillen" class="tile">
+                <div class="tile-icon">🕶️</div>
+                <h3>VR Brillen & Setup</h3>
+                <p>Hardware management en best practices voor de headsets.</p>
+            </a>
+            <a href="#blender-connec2" class="tile">
+                <div class="tile-icon">📐</div>
+                <h3>Blender & Connec2</h3>
+                <p>3D modellen maken, animeren en interacties voorbereiden.</p>
+            </a>
+            <a href="#dreamoc-display" class="tile">
+                <div class="tile-icon">🔮</div>
+                <h3>Dreamoc HD3.2</h3>
+                <p>Video formatting, templates en SD-kaart beheer voor hologrammen.</p>
+            </a>
+        </div>
+
+        <div id="vr-brillen" class="content-section">
+            <h2>Virtual Reality (VR) Basis</h2>
+            <p>Om dingen te laten zien in de VR omgeving, doorloop je drie stappen: het verkrijgen van 3D modellen (en eventueel animaties), het maken van interacties via de Connec2 Blender plug-in, en het inladen van de projecten op de VR brillen.</p>
+            
+            <div class="notice-box">
+                <strong>💡 Startpunt:</strong> Hier kan een Miro bord worden gevonden waar de basis van Blender en een korte uitleg over Connec2 worden uitgelegd.
+            </div>
+
+            <h3>VR Brillen Management</h3>
+            <p>De laatste stap van het proces is alles inladen op de VR brillen. Projecten worden ingeladen via de VR client app van Connec2. Alle uitleg over deze app en het inladen van projecten is via hun platform beschikbaar.</p>
+
+            <div class="todo-box">
+                <strong>⚠️ TO DO:</strong> Wat moeten mensen weten over het instellen van de VR brillen? (Denk aan specifieke Wifi configuraties).
+            </div>
+        </div>
+
+        <div id="blender-connec2" class="content-section">
+            <h2>Blender & Connec2 Workflow</h2>
+            <p>Blender kan op het eerste oog een intimiderend programma lijken vanwege de vele knoppen en tools. Gelukkig kun je met slechts een paar van deze tools al heel veel maken.</p>
+            
+            <ul>
+                <li><strong>Basis leren:</strong> Bekijk de aanbevolen video's om de basis, handige trucjes, beginselen van animeren (waarbij in de eerste instantie alleen keyframes nodig zijn), en texture-basis te leren.</li>
+                <li><strong>Eerste stappen:</strong> Na het bekijken en uitproberen van de video's en het volgen van het Miro bord, zou je in staat moeten zijn je eerste 3D modellen te maken.</li>
+                <li><strong>Tijdbesparing:</strong> Het maken van 3D modellen kost veel tijd; zoek daarom eerst via Google naar gratis beschikbare modellen voordat je zelf aan de slag gaat.</li>
+                <li><strong>Animaties:</strong> Gratis animaties voor menselijke figuren zijn te vinden op Mixamo.</li>
+                <li><strong>Troubleshooting:</strong> Youtube en Google zijn je beste vriend; er is erg veel documentatie te vinden over Blender.</li>
+            </ul>
+
+            <h3>Connec2 Integratie</h3>
+            <p>Connec2 heeft een plug-in voor Blender ontwikkeld waarmee eenvoudig interacties voor de VR omgeving gemaakt kunnen worden. Instructies voor het downloaden van Connec2 en de bijbehorende documentatie zijn via hun platform te vinden.</p>
+        </div>
+
+        <div id="dreamoc-display" class="content-section">
+            <h2>Dreamoc Holographic Display</h2>
+            <p>De Dreamoc creëert een 3D, zwevend effect door video's te projecteren op een reflecterend glas.</p>
+
+            <h3>Content Creatie</h3>
+            <p>Het maken van video's voor de Dreamoc is simpel, maar er zijn een aantal dingen om rekening mee te houden:</p>
+            <ul>
+                <li>Video's hoeven geen 3D renders te zijn; 2D beeldmateriaal werkt ook prima.</li>
+                <li>De content van de video mag de randen van het beeld niet raken, hierdoor verlies je het zwevende effect.</li>
+                <li>De achtergrond van je video moet zwart zijn.</li>
+                <li>De content moet worden verdeeld over 3 videobeelden zodat het hologram vanuit meerdere kanten zichtbaar is. Dit betekent niet dat je een vooraanzicht en zijaanzichten hebt. Je gebruikt dezelfde video die gedupliceerd is over 3 verschillende views.</li>
+            </ul>
+
+            <p><strong>Templates:</strong> Bezoek de download pagina van de Dreamoc voor de user manual, content manual en templates. Dreamoc biedt een Adobe After Effects template aan om je video om te zetten zodat hij de drie verschillende views op de correcte plek heeft voor het uiteindelijke effect.</p>
+
+            <h3>Hardware & SD-Kaart</h3>
+            <p>De Dreamoc heeft aan de achterkant een klep die geopend kan worden met een sleutel. Achter de klep vind je de SD-kaart. Om video's af te spelen op de Dreamoc, hoef je alleen je video op de SD-kaart te zetten, en deze terug te stoppen.</p>
+            
+            <p>De Dreamoc laat video's zien in de volgorde waarop ze op de SD-kaart geüpload staan. De volgorde kan je aanpassen door de bestandsnamen aan te passen:</p>
+            <ul>
+                <li><code>00 – MST Logo</code></li>
+                <li><code>01 – 3D lab</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Innovatiegang. Hosted via GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
